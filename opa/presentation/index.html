@@ -40,10 +40,6 @@
       display: block;
   }
 
-  img {
-      max-height: 350px !important;
-  }
-
   figcaption {
       font-size: 0.6em !important;
       font-style: italic !important;
@@ -95,23 +91,73 @@ alt="Fill in the blanks" />
 <img data-src="../images/graphs/architecture.png" alt="Profit !" />
 <figcaption aria-hidden="true">Profit !</figcaption>
 </figure>
+</section></section>
+<section>
+<section id="before-we-start" class="title-slide slide level1">
+<h1>Before we start …</h1>
+
 </section>
-<section id="some-vocabulary" class="slide level2">
-<h2>Some vocabulary</h2>
+<section id="interactivity-1" class="slide level2">
+<h2>Interactivity (1)</h2>
+<p>Parts of the demo can be run in your browser 🧑‍💻</p>
+<ul>
+<li>The links are on <a
+href="https://jherve.github.io/">https://jherve.github.io/</a>
+<ul>
+<li>Internal API</li>
+<li>Dashboard</li>
+</ul></li>
+<li>Use your first name as username/password, or “guest”</li>
+</ul>
+</section>
+<section id="interactivity-2" class="slide level2">
+<h2>Interactivity (2)</h2>
+<p>While we are at it..</p>
+<ul>
+<li>Choose a company within this list :
+<ul>
+<li>Google/Alphabet [GOOG]</li>
+<li>Facebook/Meta [META]</li>
+<li>Nvidia [NVDA]</li>
+<li>Pepsi [PEP]</li>
+<li>Adobe [ADBE]</li>
+<li>Netflix [NFLX]</li>
+<li>Tesla [TSLA]</li>
+</ul></li>
+<li>Vote in comments ! 🗳️</li>
+</ul>
+</section>
+<section id="some-concepts-1" class="slide level2">
+<h2>Some concepts (1)</h2>
+<ul>
+<li><strong>ticker</strong> / <strong>symbol</strong>
+<ul>
+<li>a unique short identifer for a company stock</li>
+<li>AAPL =&gt; Apple, MSFT =&gt; Microsoft, META =&gt; Meta</li>
+</ul></li>
+</ul>
+</section>
+<section id="some-concepts-2" class="slide level2">
+<h2>Some concepts (2)</h2>
 <div>
 <ul>
-<li class="fragment"><strong>ticker</strong> / <strong>symbol</strong>
-<ul>
-<li class="fragment">a unique short identifer for a company stock</li>
-<li class="fragment">AAPL =&gt; Apple, MSFT =&gt; Microsoft, META =&gt;
-Meta</li>
-</ul></li>
 <li class="fragment"><strong>OHLC</strong> :
 <ul>
 <li class="fragment">“open”, “high”, “low”, “close”</li>
-<li class="fragment">as opposed to “simple” (<em>my own
-wording</em>)</li>
+<li class="fragment">characterizes the volatility of a given stock</li>
+<li class="fragment">in simple cases, only the “close” value</li>
 </ul></li>
+</ul>
+</div>
+<figure>
+<img data-src="../images/AAPL_candles.png" alt="OHLC graph" />
+<figcaption aria-hidden="true">OHLC graph</figcaption>
+</figure>
+</section>
+<section id="some-concepts-3" class="slide level2">
+<h2>Some concepts (3)</h2>
+<div>
+<ul>
 <li class="fragment"><strong>volume</strong> :
 <ul>
 <li class="fragment">the number of stock values exchanged</li>
@@ -119,6 +165,10 @@ wording</em>)</li>
 </ul></li>
 </ul>
 </div>
+<figure>
+<img data-src="../images/AAPL_candles.png" alt="volume graph" />
+<figcaption aria-hidden="true">volume graph</figcaption>
+</figure>
 </section></section>
 <section>
 <section id="the-external-api" class="title-slide slide level1">
@@ -250,6 +300,23 @@ alt="Apple Candlesticks graph" />
 </div>
 <p>[connect to <a
 href="http://63.35.39.206:8050">http://63.35.39.206:8050/</a>]</p>
+</section>
+<section id="wait" class="slide level2">
+<h2>Wait !</h2>
+<div>
+<ul>
+<li class="fragment">3 companies aren’t that much to analyse the
+market</li>
+<li class="fragment">What if we want to add new companies ?</li>
+<li class="fragment">Let’s check the votes !</li>
+</ul>
+</div>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<div class="demo">
+
+</div>
 </section></section>
 <section id="thanks-for-your-attention"
 class="title-slide slide level1">
@@ -272,7 +339,17 @@ class="title-slide slide level1">
 </ul>
 </div>
 </section>
-<section id="section-4" class="slide level2">
+<section id="section-5" class="slide level2">
+<h2></h2>
+<div class="demo">
+
+</div>
+</section>
+<section id="interactive-shell" class="slide level2">
+<h2>Interactive shell</h2>
+<p>Very useful for development and quick debugging !</p>
+</section>
+<section id="section-6" class="slide level2">
 <h2></h2>
 <div class="demo">
 
