@@ -5,6 +5,9 @@ body {
     margin: auto;
     padding: 1em 0.2em;
     background-color: #0d0d0d08;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    line-height: 1.5;
 }
 
 nav {
