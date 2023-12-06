@@ -120,7 +120,7 @@
     </div>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script>
-      var flkty = new Flickity(".carousel", { wrapAround: true });
+      document.querySelectorAll(".carousel").forEach((el) => new Flickity(el, { wrapAround: true }));
     </script>
   </body>
 </html>
