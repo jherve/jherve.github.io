@@ -77,6 +77,46 @@
           <dd>Dynaconf</dd>
         </dl>
       </div>
+
+      <div id="project_media_watch" class="project">
+        <h2>A monitor of French political shows</h2>
+        <p>
+          A project that aims at automatically detecting who was invited on some French political radio shows, with inspiration from
+          <a href="https://www.politiquemedia.com/">Politiquemedia</a>
+        </p>
+        <p>
+          This application runs 24/7 and regularly polls an inventory of various sources with vastly different layouts (xml podcast feed, html pages,
+          ...) in order to extract relevant information (using notably Natural Language Processing / Entity Recognition). This information is stored
+          in a structured SQLite database and presented on a website, with pages that present data in various ways : by show, by day, by person
+          invited, ...
+        </p>
+        <div class="carousel">
+          <div class="carousel-cell"><img src="/images/media_watch_main.png" alt="Main page" /></div>
+          <div class="carousel-cell"><img src="/images/media_watch_show_list.png" alt="List of shows" /></div>
+          <div class="carousel-cell"><img src="/images/media_watch_by_day.png" alt="List of shows by day" /></div>
+          <div class="carousel-cell"><img src="/images/media_watch_by_person.png" alt="List of shows by person" /></div>
+          <div class="carousel-cell"><img src="/images/media_watch_person_search.png" alt="Searching for specific persons" /></div>
+        </div>
+        <p>You can also see :</p>
+        <ul>
+          <li>A <a href="https://media.herve.info/">live version</a></li>
+          <li>The <a href="https://github.com/jherve/media_watch">Github repo</a>
+        </ul>
+
+        <h3>Technical stack</h3>
+        <dl class="techstack">
+          <dt>Backend</dt>
+          <dd>Elixir</dd>
+          <dt>HTTP Server</dt>
+          <dd>Elixir Phoenix</dd>
+          <dt>Web Frontend</dt>
+          <dd>Elixir Phoenix LiveView</dd>
+          <dt>Data storage</dt>
+          <dd>SQLite</dd>
+          <dt>Natural Language Processing</dt>
+          <dd>Spacy</dd>
+        </dl>
+      </div>
     </div>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script>
