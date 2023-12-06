@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     max-width: 80ch;
     margin: auto;
-    padding: 0 0.2em;
+    padding: 1em 0.2em;
     background-color: #0d0d0d08;
 }
 
@@ -43,17 +43,18 @@ nav a {
     max-width: 100%;
 }
 
-dl {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-gap: 1em;
+dl.techstack {
+    display: flex;
+    flex-wrap: wrap;
     margin: 1em auto;
 }
 
-dl ul {
-    list-style: none;
+dl.techstack > dt {
+    display: none;
 }
-
-dl > dt {
-    font-weight: bold;
+dl.techstack > dd {
+    margin: 0.2em;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 0.2em;
 }
