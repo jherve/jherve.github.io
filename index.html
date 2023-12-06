@@ -1,15 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Jherve's page</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
   </head>
   <body>
     <nav>
@@ -17,47 +17,64 @@
       <a href="#contact">Contact</a>
     </nav>
 
-    <h1 id="projects">My projects</h1>
+    <div id="projects">
+      <h1>My projects</h1>
 
-    <h2 id="project_financial_dashboard">A financial data dashboard</h2>
-    <div class="carousel">
-      <div class="carousel-cell"><img src="/images/opa_dash_google_long.png" alt="Long series for Google close value" /></div>
-      <div class="carousel-cell"><img src="/images/opa_dash_netflix_simple.png" alt="Short series for Netflix close value" /></div>
-      <div class="carousel-cell"><img src="/images/opa_dash_tesla_ohlc.png" alt="OHLC values for Tesla stock" /></div>
-      <div class="carousel-cell"><img src="/images/opa_api_example_request.png" alt="Example of API call within FastAPI" /></div>
-      <div class="carousel-cell"><img src="/images/architecture.png" alt="Overall architecture of the project" /></div>
+      <div id="project_financial_dashboard" class="project">
+        <h2>A financial data dashboard</h2>
+        <div class="carousel">
+          <div class="carousel-cell"><img src="/images/opa_dash_google_long.png" alt="Long series for Google close value" /></div>
+          <div class="carousel-cell"><img src="/images/opa_dash_netflix_simple.png" alt="Short series for Netflix close value" /></div>
+          <div class="carousel-cell"><img src="/images/opa_dash_tesla_ohlc.png" alt="OHLC values for Tesla stock" /></div>
+          <div class="carousel-cell"><img src="/images/opa_api_example_request.png" alt="Example of API call within FastAPI" /></div>
+          <div class="carousel-cell"><img src="/images/architecture.png" alt="Overall architecture of the project" /></div>
+        </div>
+        <p>
+          This project was developed as part of my
+          <a href="https://datascientest.com/formation-data-engineer" rel="nofollow">3-month Data Engineer course at Datascientest</a>, in parallel to
+          the pedagogical cursus (which covers topics from Machine Learning essentials to Kubernetes, via SQL, MongoDB, Scala, Spark,...).
+        </p>
+        <p>
+          The <a href="https://github.com/DataScientest-Studio/juin23_bde_opa">Github repo</a>'s README is the most up-to-date documentation on this
+          project.
+        </p>
+        <p>You can also see :</p>
+        <ul>
+          <li>
+            A <strong>live version</strong> of the <a href="http://141.145.219.241:8050/">data dashboard</a>, running on a <em>very</em> slow (but
+            free) <a href="https://www.oracle.com/cloud/free/#always-free">Oracle Cloud instance</a>
+          </li>
+          <li>
+            A <strong>live version</strong> of the <a href="http://141.145.219.241:8000/docs">API documentation</a> (use "guest"/"guest" as
+            username/password)
+          </li>
+          <li><a href="https://github.com/DataScientest-Studio/juin23_bde_opa/blob/main/docs/report/opa.pdf">A PDF report</a></li>
+          <li><a href="opa/presentation">A presentation in slides</a></li>
+        </ul>
+
+        <p>The technical stack consists of :</p>
+        <dl>
+          <dt>Dashboard</dt>
+          <dd>Dash</dd>
+          <dt>API server</dt>
+          <dd>FastAPI</dd>
+          <dt>Stock market data storage</dt>
+          <dd>MongoDB</dd>
+          <dt>Deployment</dt>
+          <dd>Docker</dd>
+          <dt>Utility libraries</dt>
+          <ul>
+            <li>Pydantic (data validation)</li>
+            <li>Pandas (data processing)</li>
+            <li>Pytest (unit/integration/e2e testing)</li>
+            <li>Dynaconf (configuration management)</li>
+          </ul>
+        </dl>
+      </div>
     </div>
-    <p>This project was developed as part of my <a href="https://datascientest.com/formation-data-engineer" rel="nofollow">3-month Data Engineer course at Datascientest</a>, in parallel to the pedagogical cursus (which covers topics from Machine Learning essentials to Kubernetes, via SQL, MongoDB, Scala, Spark,...).</p>
-    <p>The <a href="https://github.com/DataScientest-Studio/juin23_bde_opa">Github repo</a>'s README is the most up-to-date documentation on this project.</p>
-    <p>You can also see :</p>
-    <ul>
-      <li>A <strong>live version</strong> of the <a href="http://141.145.219.241:8050/">data dashboard</a>, running on a <em>very</em> slow (but free) <a href="https://www.oracle.com/cloud/free/#always-free">Oracle Cloud instance</a></li>
-      <li>A <strong>live version</strong> of the <a href="http://141.145.219.241:8000/docs">API documentation</a> (use "guest"/"guest" as username/password)</li>
-      <li><a href="https://github.com/DataScientest-Studio/juin23_bde_opa/blob/main/docs/report/opa.pdf">A PDF report</a></li>
-      <li><a href="opa/presentation">A presentation in slides</a></li>
-    </ul>
-
-    <p>The technical stack consists of :</p>
-    <dl>
-      <dt>Dashboard</dt>
-      <dd>Dash</dd>
-      <dt>API server</dt>
-      <dd>FastAPI</dd>
-      <dt>Stock market data storage</dt>
-      <dd>MongoDB</dd>
-      <dt>Deployment</dt>
-      <dd>Docker</dd>
-      <dt>Utility libraries</dt>
-      <ul>
-        <li>Pydantic (data validation)</li>
-        <li>Pandas (data processing)</li>
-        <li>Pytest (unit/integration/e2e testing)</li>
-        <li>Dynaconf (configuration management)</li>
-      </ul>
-    </dl>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script>
-      var flkty = new Flickity( ".carousel", { wrapAround: true });
+      var flkty = new Flickity(".carousel", { wrapAround: true });
     </script>
   </body>
 </html>
