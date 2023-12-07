@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" />
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity-fullscreen@1/fullscreen.css">
   </head>
   <body>
     <nav>
@@ -146,8 +147,9 @@
     </main>
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity-fullscreen@1/fullscreen.js"></script>
     <script>
-      document.querySelectorAll(".carousel").forEach((el) => new Flickity(el, { wrapAround: true }));
+      document.querySelectorAll(".carousel").forEach((el) => new Flickity(el, { wrapAround: true, fullscreen: true }));
     </script>
     <script>
       const main = document.querySelector("main");
