@@ -61,16 +61,31 @@ main {
 }
 
 #me h1 {
-    font-size: 4em;
+    font-size: 3em;
 }
 
 #me h2 {
     align-self: end;
     text-transform: uppercase;
+    font-weight: lighter;
+    margin: 0;
 }
 
-#me p {
+#me p.summary {
     margin-top: auto;
+    margin-bottom: 4em;
+    text-align: left;
+}
+
+#me a {
+    margin: 0;
+    align-self: end;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#me a svg {
+    height: 1rem;
 }
 
 #projects {
