@@ -13,11 +13,13 @@ body {
 nav {
     display: flex;
     justify-content: center;
+    align-items: center;
     grid-gap: 2em;
 }
 
-nav a {
-    color: black;
+nav a,
+#me a {
+    color: inherit;
     text-decoration: none;
 }
 
