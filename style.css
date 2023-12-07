@@ -36,7 +36,8 @@ nav img {
 }
 
 nav a,
-#me a {
+#me a,
+dd a {
     color: inherit;
     text-decoration: none;
 }
