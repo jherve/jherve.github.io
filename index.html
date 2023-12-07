@@ -23,109 +23,112 @@
       <a href="https://www.github.com/jherve/"><img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/github.svg" /></a>
     </nav>
 
-    <div id="projects">
-      <h1>Projects</h1>
+    <main>
+      <div id="projects">
+        <h1>Projects</h1>
 
-      <div id="project_financial_dashboard" class="project">
-        <h2>A financial data dashboard</h2>
-        <p>
-          Developed as part of my
-          <a href="https://datascientest.com/formation-data-engineer" rel="nofollow">3-month Data Engineer course at Datascientest</a>, in parallel to
-          the pedagogical cursus.
-        </p>
-        <p>It basically consists of :</p>
-        <ul>
-          <li>Retrieving stock market data at regular intervals,</li>
-          <li>Storing it in a local database,</li>
-          <li>Making it available through an HTTP API (see it live)</li>
-          <li>Displaying the data in a dashboard (see it live)</li>
-          <li>Putting all that in production, microservices-style</li>
-        </ul>
-        <div class="carousel">
-          <div class="carousel-cell"><img src="/images/opa_dash_google_long.png" alt="Long series for Google close value" /></div>
-          <div class="carousel-cell"><img src="/images/opa_dash_netflix_simple.png" alt="Short series for Netflix close value" /></div>
-          <div class="carousel-cell"><img src="/images/opa_dash_tesla_ohlc.png" alt="OHLC values for Tesla stock" /></div>
-          <div class="carousel-cell"><img src="/images/opa_api_example_request.png" alt="Example of API call within FastAPI" /></div>
-          <div class="carousel-cell"><img src="/images/architecture.png" alt="Overall architecture of the project" /></div>
+        <div id="project_financial_dashboard" class="project">
+          <h2>A financial data dashboard</h2>
+          <p>
+            Developed as part of my
+            <a href="https://datascientest.com/formation-data-engineer" rel="nofollow">3-month Data Engineer course at Datascientest</a>, in parallel
+            to the pedagogical cursus.
+          </p>
+          <p>It basically consists of :</p>
+          <ul>
+            <li>Retrieving stock market data at regular intervals,</li>
+            <li>Storing it in a local database,</li>
+            <li>Making it available through an HTTP API (see it live)</li>
+            <li>Displaying the data in a dashboard (see it live)</li>
+            <li>Putting all that in production, microservices-style</li>
+          </ul>
+          <div class="carousel">
+            <div class="carousel-cell"><img src="/images/opa_dash_google_long.png" alt="Long series for Google close value" /></div>
+            <div class="carousel-cell"><img src="/images/opa_dash_netflix_simple.png" alt="Short series for Netflix close value" /></div>
+            <div class="carousel-cell"><img src="/images/opa_dash_tesla_ohlc.png" alt="OHLC values for Tesla stock" /></div>
+            <div class="carousel-cell"><img src="/images/opa_api_example_request.png" alt="Example of API call within FastAPI" /></div>
+            <div class="carousel-cell"><img src="/images/architecture.png" alt="Overall architecture of the project" /></div>
+          </div>
+          <p>You can also see :</p>
+          <ul>
+            <li>
+              A <strong>live version</strong> of the <a href="http://141.145.219.241:8050/">data dashboard</a>, running on a <em>very</em> slow (but
+              free) <a href="https://www.oracle.com/cloud/free/#always-free">Oracle Cloud instance</a>
+            </li>
+            <li>
+              A <strong>live version</strong> of the <a href="http://141.145.219.241:8000/docs">API documentation</a> (use "guest"/"guest" as
+              username/password)
+            </li>
+            <li>The <a href="https://github.com/DataScientest-Studio/juin23_bde_opa">Github repo</a> with source code, documentation, tests, ...</li>
+            <li><a href="https://github.com/DataScientest-Studio/juin23_bde_opa/blob/main/docs/report/opa.pdf">A PDF report</a></li>
+            <li><a href="opa/presentation">A presentation in slides</a></li>
+          </ul>
+
+          <h3>Technical stack</h3>
+          <dl class="techstack">
+            <dt>Dashboard</dt>
+            <dd>Dash</dd>
+            <dt>API server</dt>
+            <dd>FastAPI</dd>
+            <dt>Stock market data storage</dt>
+            <dd>MongoDB</dd>
+            <dt>Deployment</dt>
+            <dd>Docker</dd>
+            <dt>Data validation</dt>
+            <dd>Pydantic</dd>
+            <dt>Data processing</dt>
+            <dd>Pandas</dd>
+            <dt>Unit/integration/e2e testing</dt>
+            <dd>Pytest</dd>
+            <dt>Configuration management</dt>
+            <dd>Dynaconf</dd>
+          </dl>
         </div>
-        <p>You can also see :</p>
-        <ul>
-          <li>
-            A <strong>live version</strong> of the <a href="http://141.145.219.241:8050/">data dashboard</a>, running on a <em>very</em> slow (but
-            free) <a href="https://www.oracle.com/cloud/free/#always-free">Oracle Cloud instance</a>
-          </li>
-          <li>
-            A <strong>live version</strong> of the <a href="http://141.145.219.241:8000/docs">API documentation</a> (use "guest"/"guest" as
-            username/password)
-          </li>
-          <li>The <a href="https://github.com/DataScientest-Studio/juin23_bde_opa">Github repo</a> with source code, documentation, tests, ...</li>
-          <li><a href="https://github.com/DataScientest-Studio/juin23_bde_opa/blob/main/docs/report/opa.pdf">A PDF report</a></li>
-          <li><a href="opa/presentation">A presentation in slides</a></li>
-        </ul>
 
-        <h3>Technical stack</h3>
-        <dl class="techstack">
-          <dt>Dashboard</dt>
-          <dd>Dash</dd>
-          <dt>API server</dt>
-          <dd>FastAPI</dd>
-          <dt>Stock market data storage</dt>
-          <dd>MongoDB</dd>
-          <dt>Deployment</dt>
-          <dd>Docker</dd>
-          <dt>Data validation</dt>
-          <dd>Pydantic</dd>
-          <dt>Data processing</dt>
-          <dd>Pandas</dd>
-          <dt>Unit/integration/e2e testing</dt>
-          <dd>Pytest</dd>
-          <dt>Configuration management</dt>
-          <dd>Dynaconf</dd>
-        </dl>
-      </div>
+        <div id="project_media_watch" class="project">
+          <h2>A monitor of French political shows</h2>
+          <p>
+            A project that aims at automatically detecting who was invited on some French political radio shows, with inspiration from
+            <a href="https://www.politiquemedia.com/">Politiquemedia.</a>
+          </p>
+          <p>This application :</p>
+          <ul>
+            <li>has run 24/7 since 2021,</li>
+            <li>regularly polls an inventory of various sources with vastly different layouts (xml podcast feed, html pages, ...)</li>
+            <li>extract relevant information (using notably Natural Language Processing / Entity Recognition)</li>
+            <li>stores it in a structured SQLite database</li>
+            <li>presents it on a website, with pages that present data in various ways : by show, by day, by person invited, ...</li>
+          </ul>
+          <div class="carousel">
+            <div class="carousel-cell"><img src="/images/media_watch_main.png" alt="Main page" /></div>
+            <div class="carousel-cell"><img src="/images/media_watch_show_list.png" alt="List of shows" /></div>
+            <div class="carousel-cell"><img src="/images/media_watch_by_day.png" alt="List of shows by day" /></div>
+            <div class="carousel-cell"><img src="/images/media_watch_by_person.png" alt="List of shows by person" /></div>
+            <div class="carousel-cell"><img src="/images/media_watch_person_search.png" alt="Searching for specific persons" /></div>
+          </div>
+          <p>You can also see :</p>
+          <ul>
+            <li>A <a href="https://media.herve.info/">live version</a></li>
+            <li>The <a href="https://github.com/jherve/media_watch">Github repo</a></li>
+          </ul>
 
-      <div id="project_media_watch" class="project">
-        <h2>A monitor of French political shows</h2>
-        <p>
-          A project that aims at automatically detecting who was invited on some French political radio shows, with inspiration from
-          <a href="https://www.politiquemedia.com/">Politiquemedia.</a>
-        </p>
-        <p>This application :</p>
-        <ul>
-          <li>has run 24/7 since 2021,</li>
-          <li>regularly polls an inventory of various sources with vastly different layouts (xml podcast feed, html pages, ...)</li>
-          <li>extract relevant information (using notably Natural Language Processing / Entity Recognition)</li>
-          <li>stores it in a structured SQLite database</li>
-          <li>presents it on a website, with pages that present data in various ways : by show, by day, by person invited, ...</li>
-        </ul>
-        <div class="carousel">
-          <div class="carousel-cell"><img src="/images/media_watch_main.png" alt="Main page" /></div>
-          <div class="carousel-cell"><img src="/images/media_watch_show_list.png" alt="List of shows" /></div>
-          <div class="carousel-cell"><img src="/images/media_watch_by_day.png" alt="List of shows by day" /></div>
-          <div class="carousel-cell"><img src="/images/media_watch_by_person.png" alt="List of shows by person" /></div>
-          <div class="carousel-cell"><img src="/images/media_watch_person_search.png" alt="Searching for specific persons" /></div>
+          <h3>Technical stack</h3>
+          <dl class="techstack">
+            <dt>Backend</dt>
+            <dd>Elixir</dd>
+            <dt>HTTP Server</dt>
+            <dd>Elixir Phoenix</dd>
+            <dt>Web Frontend</dt>
+            <dd>Elixir Phoenix LiveView</dd>
+            <dt>Data storage</dt>
+            <dd>SQLite</dd>
+            <dt>Natural Language Processing</dt>
+            <dd>Spacy</dd>
+          </dl>
         </div>
-        <p>You can also see :</p>
-        <ul>
-          <li>A <a href="https://media.herve.info/">live version</a></li>
-          <li>The <a href="https://github.com/jherve/media_watch">Github repo</a></li>
-        </ul>
-
-        <h3>Technical stack</h3>
-        <dl class="techstack">
-          <dt>Backend</dt>
-          <dd>Elixir</dd>
-          <dt>HTTP Server</dt>
-          <dd>Elixir Phoenix</dd>
-          <dt>Web Frontend</dt>
-          <dd>Elixir Phoenix LiveView</dd>
-          <dt>Data storage</dt>
-          <dd>SQLite</dd>
-          <dt>Natural Language Processing</dt>
-          <dd>Spacy</dd>
-        </dl>
       </div>
-    </div>
+    </main>
+
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script>
       document.querySelectorAll(".carousel").forEach((el) => new Flickity(el, { wrapAround: true }));
