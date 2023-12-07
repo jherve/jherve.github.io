@@ -39,6 +39,7 @@ nav a,
 
 main {
     overflow-y: scroll;
+    scroll-snap-type: y proximity;
 }
 
 #me ul,
@@ -50,11 +51,13 @@ main {
 }
 
 #me {
-    height: 50vh;
+    height: 100%;
     max-width: 60ch;
     display: flex;
     flex-direction: column;
     margin: auto;
+    padding: 0 1em;
+    scroll-snap-align: start;
 }
 
 #me h1 {
@@ -64,6 +67,18 @@ main {
 #me h2 {
     align-self: end;
     text-transform: uppercase;
+}
+
+#me p {
+    margin-top: auto;
+}
+
+#projects {
+    scroll-snap-align: start;
+}
+
+#dummy-snap {
+    scroll-snap-align: start;
 }
 
 .project {
