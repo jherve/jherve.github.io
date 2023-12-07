@@ -149,5 +149,11 @@
     <script>
       document.querySelectorAll(".carousel").forEach((el) => new Flickity(el, { wrapAround: true }));
     </script>
+    <script>
+      const main = document.querySelector("main");
+      main.addEventListener("scroll", (event) => {
+        main.classList.add("scrolled");
+      });
+    </script>
   </body>
 </html>

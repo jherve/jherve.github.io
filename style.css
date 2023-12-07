@@ -46,6 +46,27 @@ main {
     scroll-snap-type: y proximity;
 }
 
+main::before {
+    content: 'V';
+    display: block;
+    position: absolute;
+    bottom: 1vh;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: -1;
+    animation: bumping infinite ease-in alternate 500ms;
+}
+
+main.scrolled::before {
+    content: initial;
+}
+
+@keyframes bumping {
+    from { transform: translateY(-.5vh); }
+    to {   transform: translateY( .5vh); }
+}
+
 #me ul,
 #me ul li {
     margin:0;
