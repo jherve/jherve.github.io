@@ -31,6 +31,10 @@ nav {
     padding: 1em;
 }
 
+nav img {
+    height: 2em;
+}
+
 nav a,
 #me a {
     color: inherit;
