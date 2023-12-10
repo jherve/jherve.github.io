@@ -98,9 +98,9 @@ main.scrolled::before {
 }
 
 #me p.summary {
-    margin-top: auto;
-    margin-bottom: 4em;
-    text-align: left;
+    margin: auto;
+    width: 30.2ch;
+    text-align: justify;
 }
 
 #me a {
