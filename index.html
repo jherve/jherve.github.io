@@ -59,11 +59,17 @@
             <li>Running that in production in a microservices-way</li>
           </ul>
           <div class="carousel">
-            <div class="carousel-cell"><img src="/images/opa_dash_google_long.png" alt="Long series for Google close value" /></div>
-            <div class="carousel-cell"><img src="/images/opa_dash_netflix_simple.png" alt="Short series for Netflix close value" /></div>
-            <div class="carousel-cell"><img src="/images/opa_dash_tesla_ohlc.png" alt="OHLC values for Tesla stock" /></div>
-            <div class="carousel-cell"><img src="/images/opa_api_example_request.png" alt="Example of API call within FastAPI" /></div>
-            <div class="carousel-cell"><img src="/images/architecture.png" alt="Overall architecture of the project" /></div>
+            <div class="carousel-cell">
+              <img data-flickity-lazyload="/images/opa_dash_google_long.png" alt="Long series for Google close value" />
+            </div>
+            <div class="carousel-cell">
+              <img data-flickity-lazyload="/images/opa_dash_netflix_simple.png" alt="Short series for Netflix close value" />
+            </div>
+            <div class="carousel-cell"><img data-flickity-lazyload="/images/opa_dash_tesla_ohlc.png" alt="OHLC values for Tesla stock" /></div>
+            <div class="carousel-cell">
+              <img data-flickity-lazyload="/images/opa_api_example_request.png" alt="Example of API call within FastAPI" />
+            </div>
+            <div class="carousel-cell"><img data-flickity-lazyload="/images/architecture.png" alt="Overall architecture of the project" /></div>
           </div>
           <p>You can also see :</p>
           <ul>
@@ -116,11 +122,13 @@
             <li>presents it on a website, with pages that present data in various ways : by show, by day, by person invited, ...</li>
           </ul>
           <div class="carousel">
-            <div class="carousel-cell"><img src="/images/media_watch_main.png" alt="Main page" /></div>
-            <div class="carousel-cell"><img src="/images/media_watch_show_list.png" alt="List of shows" /></div>
-            <div class="carousel-cell"><img src="/images/media_watch_by_day.png" alt="List of shows by day" /></div>
-            <div class="carousel-cell"><img src="/images/media_watch_by_person.png" alt="List of shows by person" /></div>
-            <div class="carousel-cell"><img src="/images/media_watch_person_search.png" alt="Searching for specific persons" /></div>
+            <div class="carousel-cell"><img data-flickity-lazyload="/images/media_watch_main.png" alt="Main page" /></div>
+            <div class="carousel-cell"><img data-flickity-lazyload="/images/media_watch_show_list.png" alt="List of shows" /></div>
+            <div class="carousel-cell"><img data-flickity-lazyload="/images/media_watch_by_day.png" alt="List of shows by day" /></div>
+            <div class="carousel-cell"><img data-flickity-lazyload="/images/media_watch_by_person.png" alt="List of shows by person" /></div>
+            <div class="carousel-cell">
+              <img data-flickity-lazyload="/images/media_watch_person_search.png" alt="Searching for specific persons" />
+            </div>
           </div>
           <p>
             Please note that although the application is still running and doing its job for some of the sources, the ever-evolving nature of the data
@@ -153,7 +161,9 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://unpkg.com/flickity-fullscreen@1/fullscreen.js"></script>
     <script>
-      document.querySelectorAll(".carousel").forEach((el) => new Flickity(el, { wrapAround: true, fullscreen: true }));
+      document
+        .querySelectorAll(".carousel")
+        .forEach((el) => new Flickity(el, { wrapAround: true, fullscreen: true, lazyLoad: true, imagesLoaded: true }));
     </script>
     <script>
       const main = document.querySelector("main");
