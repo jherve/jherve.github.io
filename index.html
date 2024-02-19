@@ -107,6 +107,50 @@
           </dl>
         </div>
 
+        <div id="project_job_search_web_ext" class="project">
+          <h2>A Firefox extension for job search</h2>
+          <p>I have developed this extension to assist me in my job search and as a demonstration of web-scraping on a non-friendly site (LinkedIn).</p>
+          <p>It is capable of :</p>
+          <ul>
+            <li>Automatically extracting data from LinkedIn job offer pages (e.g. job position, company name, link, company domain, location, ...),</li>
+            <li>Saving it in a plain text database,</li>
+            <li>Displaying a colored overlay on offers depending on their status (seen/applied to/dismissed/rejected/...)</li>
+            <li>Displaying the offers in a sidebar</li>
+          </ul>
+          <div class="carousel">
+            <div class="carousel-cell">
+              <img data-flickity-lazyload="/images/linked_in_ext_job_list_blur.png" alt="A view of the job list with overlays for status" />
+            </div>
+            <div class="carousel-cell">
+              <img data-flickity-lazyload="/images/linked_in_ext_datafile_blur.png" alt="The resulting data file" />
+            </div>
+            <div class="carousel-cell">
+              <img data-flickity-lazyload="/images/linked_in_ext_sidebar_blur.png" alt="The sidebar with tracked job offers" />
+            </div>
+          </div>
+
+          <p>
+            It was also a good excuse to dive into PureScript, a Haskell-like pure functional language that compiles
+            to Javascript, which just like its elder has tons of fascinating programming concepts.
+          </p>
+          <p>Resources :</p>
+          <ul>
+            <li>The <a href="https://github.com/jherve/job_search_ext">Github repo</a></li>
+          </ul>
+
+          <h3>Technical stack</h3>
+          <dl class="techstack">
+            <dt>Frontend</dt>
+            <dd><a href="https://www.purescript.org/">Purescript</a></dd>
+            <dt>Architecture</dt>
+            <dd><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions">Web Extensions</a></dd>
+            <dt>Backend</dt>
+            <dd><a href="https://www.python.org/">Python</a></dd>
+            <dt>Database</dt>
+            <dd><a href="https://www.gnu.org/software/recutils/">Recutils</a></dd>
+          </dl>
+        </div>
+
         <div id="project_media_watch" class="project">
           <h2>A monitor of French political shows</h2>
           <p>
