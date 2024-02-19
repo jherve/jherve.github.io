@@ -156,6 +156,11 @@ main.scrolled::before {
     max-width: 100%;
 }
 
+.caption {
+    text-align: center;
+    font-style: italic;
+}
+
 dl.techstack {
     display: flex;
     flex-wrap: wrap;

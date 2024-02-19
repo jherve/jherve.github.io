@@ -237,7 +237,15 @@
     <script>
       document
         .querySelectorAll(".carousel")
-        .forEach((el) => new Flickity(el, { wrapAround: true, fullscreen: true, lazyLoad: true, imagesLoaded: true }));
+        .forEach(el => {
+          const flick = new Flickity(el, { wrapAround: true, fullscreen: true, lazyLoad: true, imagesLoaded: true });
+
+          // Add a p.caption element that is added after each carousel and updated with the selectged image's alt text.
+          const caption = document.createElement("p");
+          caption.className = "caption";
+          el.insertAdjacentElement("afterend", caption);
+          flick.on('select', function() { caption.textContent = flick.selectedElement.querySelector("img").alt; });
+        });
     </script>
     <script>
       const main = document.querySelector("main");
