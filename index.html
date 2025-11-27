@@ -43,6 +43,84 @@
       <div id="projects">
         <h1>Projects</h1>
 
+        <div id="project_social_network" class="project">
+          <h2>A MVP for a social network</h2>
+          <p>I developed this MVP all by myself as a demonstration platform with the intention of building a business around it.</p>
+          <p>It had the following features, with a backend server and a responsive Web client :</p>
+          <ul>
+            <li>User registration and administration</li>
+            <li>Management of social contacts (friendship, groups, ...)</li>
+            <li>Live chat and messaging</li>
+            <li>Management of a private library of links that could be annotated or shared with contacts</li>
+            <li>Client-side notifications</li>
+          </ul>
+          <p>The live version has been put down and the code remained closed source.</p>
+
+          <h3>Technical stack</h3>
+          <dl class="techstack">
+            <dt>Backend</dt>
+            <dd><a href="https://elixir-lang.org/">Elixir</a></dd>
+            <dt>HTTP Server</dt>
+            <dd><a href="https://www.phoenixframework.org/">Elixir Phoenix</a></dd>
+            <dt>Web Frontend</dt>
+            <dd><a href="https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html">Elixir Phoenix LiveView</a></dd>
+            <dt>Data storage</dt>
+            <dd><a href="https://www.postgresql.org/">PostgreSQL</a></dd>
+            <dt>Deployment</dt>
+            <dd><a href="https://www.ansible.com/">Ansible</a></dd>
+            <dt>Client-side notifications</dt>
+            <dd><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript">Native Javascript</a></dd>
+          </dl>
+        </div>
+
+        <div id="project_media_watch" class="project">
+          <h2>A monitor of French political shows</h2>
+          <p>
+            A project that aims at automatically detecting who was invited on some French political radio shows, with inspiration from
+            <a href="https://www.politiquemedia.com/">Politiquemedia.</a>
+          </p>
+          <p>This application :</p>
+          <ul>
+            <li>has run 24/7 since 2021,</li>
+            <li>regularly polls an inventory of various sources with vastly different layouts (xml podcast feed, html pages, ...)</li>
+            <li>extract relevant information (using notably Natural Language Processing / Entity Recognition)</li>
+            <li>stores it in a structured SQLite database</li>
+            <li>presents it on a website, with pages that present data in various ways : by show, by day, by person invited, ...</li>
+          </ul>
+          <div class="carousel">
+            <div class="carousel-cell"><img data-flickity-lazyload="/images/media_watch_main.png" alt="Main page" /></div>
+            <div class="carousel-cell"><img data-flickity-lazyload="/images/media_watch_show_list.png" alt="List of shows" /></div>
+            <div class="carousel-cell"><img data-flickity-lazyload="/images/media_watch_by_day.png" alt="List of shows by day" /></div>
+            <div class="carousel-cell"><img data-flickity-lazyload="/images/media_watch_by_person.png" alt="List of shows by person" /></div>
+            <div class="carousel-cell">
+              <img data-flickity-lazyload="/images/media_watch_person_search.png" alt="Searching for specific persons" />
+            </div>
+          </div>
+          <p>
+            Please note that although the application is still running and doing its job for some of the sources, the ever-evolving nature of the data
+            processed (changes in xml/page layout, mostly) requires regular updates which I have not been able to provide.
+          </p>
+          <p>With that in mind, you can see :</p>
+          <ul>
+            <li>A <a href="https://media.herve.info/">live version</a></li>
+            <li>The <a href="https://github.com/jherve/media_watch">Github repo</a></li>
+          </ul>
+
+          <h3>Technical stack</h3>
+          <dl class="techstack">
+            <dt>Backend</dt>
+            <dd><a href="https://elixir-lang.org/">Elixir</a></dd>
+            <dt>HTTP Server</dt>
+            <dd><a href="https://www.phoenixframework.org/">Elixir Phoenix</a></dd>
+            <dt>Web Frontend</dt>
+            <dd><a href="https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html">Elixir Phoenix LiveView</a></dd>
+            <dt>Data storage</dt>
+            <dd><a href="https://www.sqlite.org/">SQLite</a></dd>
+            <dt>Natural Language Processing</dt>
+            <dd><a href="https://spacy.io/">Spacy</a></dd>
+          </dl>
+        </div>
+
         <div id="project_financial_dashboard" class="project">
           <h2>A financial data dashboard</h2>
           <p>
@@ -148,84 +226,6 @@
             <dd><a href="https://www.python.org/">Python</a></dd>
             <dt>Database</dt>
             <dd><a href="https://www.gnu.org/software/recutils/">Recutils</a></dd>
-          </dl>
-        </div>
-
-        <div id="project_media_watch" class="project">
-          <h2>A monitor of French political shows</h2>
-          <p>
-            A project that aims at automatically detecting who was invited on some French political radio shows, with inspiration from
-            <a href="https://www.politiquemedia.com/">Politiquemedia.</a>
-          </p>
-          <p>This application :</p>
-          <ul>
-            <li>has run 24/7 since 2021,</li>
-            <li>regularly polls an inventory of various sources with vastly different layouts (xml podcast feed, html pages, ...)</li>
-            <li>extract relevant information (using notably Natural Language Processing / Entity Recognition)</li>
-            <li>stores it in a structured SQLite database</li>
-            <li>presents it on a website, with pages that present data in various ways : by show, by day, by person invited, ...</li>
-          </ul>
-          <div class="carousel">
-            <div class="carousel-cell"><img data-flickity-lazyload="/images/media_watch_main.png" alt="Main page" /></div>
-            <div class="carousel-cell"><img data-flickity-lazyload="/images/media_watch_show_list.png" alt="List of shows" /></div>
-            <div class="carousel-cell"><img data-flickity-lazyload="/images/media_watch_by_day.png" alt="List of shows by day" /></div>
-            <div class="carousel-cell"><img data-flickity-lazyload="/images/media_watch_by_person.png" alt="List of shows by person" /></div>
-            <div class="carousel-cell">
-              <img data-flickity-lazyload="/images/media_watch_person_search.png" alt="Searching for specific persons" />
-            </div>
-          </div>
-          <p>
-            Please note that although the application is still running and doing its job for some of the sources, the ever-evolving nature of the data
-            processed (changes in xml/page layout, mostly) requires regular updates which I have not been able to provide.
-          </p>
-          <p>With that in mind, you can see :</p>
-          <ul>
-            <li>A <a href="https://media.herve.info/">live version</a></li>
-            <li>The <a href="https://github.com/jherve/media_watch">Github repo</a></li>
-          </ul>
-
-          <h3>Technical stack</h3>
-          <dl class="techstack">
-            <dt>Backend</dt>
-            <dd><a href="https://elixir-lang.org/">Elixir</a></dd>
-            <dt>HTTP Server</dt>
-            <dd><a href="https://www.phoenixframework.org/">Elixir Phoenix</a></dd>
-            <dt>Web Frontend</dt>
-            <dd><a href="https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html">Elixir Phoenix LiveView</a></dd>
-            <dt>Data storage</dt>
-            <dd><a href="https://www.sqlite.org/">SQLite</a></dd>
-            <dt>Natural Language Processing</dt>
-            <dd><a href="https://spacy.io/">Spacy</a></dd>
-          </dl>
-        </div>
-
-        <div id="project_social_network" class="project">
-          <h2>A MVP for a social network</h2>
-          <p>I developed this MVP all by myself as a demonstration platform with the intention of building a business around it.</p>
-          <p>It had the following features, with a backend server and a responsive Web client :</p>
-          <ul>
-            <li>User registration and administration</li>
-            <li>Management of social contacts (friendship, groups, ...)</li>
-            <li>Live chat and messaging</li>
-            <li>Management of a private library of links that could be annotated or shared with contacts</li>
-            <li>Client-side notifications</li>
-          </ul>
-          <p>The live version has been put down and the code remained closed source.</p>
-
-          <h3>Technical stack</h3>
-          <dl class="techstack">
-            <dt>Backend</dt>
-            <dd><a href="https://elixir-lang.org/">Elixir</a></dd>
-            <dt>HTTP Server</dt>
-            <dd><a href="https://www.phoenixframework.org/">Elixir Phoenix</a></dd>
-            <dt>Web Frontend</dt>
-            <dd><a href="https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html">Elixir Phoenix LiveView</a></dd>
-            <dt>Data storage</dt>
-            <dd><a href="https://www.postgresql.org/">PostgreSQL</a></dd>
-            <dt>Deployment</dt>
-            <dd><a href="https://www.ansible.com/">Ansible</a></dd>
-            <dt>Client-side notifications</dt>
-            <dd><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript">Native Javascript</a></dd>
           </dl>
         </div>
       </div>
